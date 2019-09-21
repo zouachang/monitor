@@ -42,7 +42,7 @@ class App extends Component {
             ? 'NO DB ENTRIES YET'
             : user.map((u, index) => (
               <li style={{ padding: '10px' }} key={u.userId}>
-                <span>{index}: </span>
+                <span>{index + 1}: </span>
                 <span style={{ color: 'gray' }}> User ID: </span> {u.userId}
                 <span style={{ color: 'gray' }}> Phone: </span> {u.phone}
                 <span style={{ color: 'gray' }}> Email: </span> {u.mail}
