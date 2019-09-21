@@ -17,6 +17,10 @@
   color: white;
 }
 
+.App-error {
+  background-color: red;
+}
+
 .App-link {
   color: #09d3ac;
 }
