@@ -40,9 +40,9 @@ class App extends Component {
         <ul>
           {user.length <= 0
             ? 'NO DB ENTRIES YET'
-            : user.map((u, index) => (
+            : user.map((u) => (
               <li style={{ padding: '10px' }} key={u.userId}>
-                <span>{index + 1}: </span>
+                <span style={{ color: 'gray' }}> Rank: </span> {u._id}
                 <span style={{ color: 'gray' }}> User ID: </span> {u.userId}
                 <span style={{ color: 'gray' }}> Phone: </span> {u.phone}
                 <span style={{ color: 'gray' }}> Email: </span> {u.mail}
